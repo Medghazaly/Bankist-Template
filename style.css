@@ -314,15 +314,15 @@ h4 {
     align-items: center;
     justify-content: center;
     background-color: white;
-    opacity: 0.9;
-    z-index: 9999;
+    opacity: 0;
     gap: 1rem;
-    transition: 0.3s;
-    transform: translateX(100%);
+    transition: all 0.3s;
+    z-index: -1;
   }
 
   .nav__links.open {
-    transform: translateX(0);
+    opacity: 1;
+    z-index: 999;
   }
 
   .nav__links .icon__x {
@@ -973,5 +973,5 @@ h4 {
 }
 
 .icon__arrow-up.scroll {
-  right: 30px;
+  right: 5px;
 }
